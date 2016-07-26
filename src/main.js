@@ -11,6 +11,9 @@ $(function() {
       url: urlMovie
     }).done(function (results) {
       console.log(results);
+      var image = results.Poster
+      $('#posterImage').attr('src', image)
+      console.log(image);
     })
   })
 })
